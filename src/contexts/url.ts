@@ -1,0 +1,1 @@
+export const url: string = "https://cv-server-9fkh.onrender.com/api"
