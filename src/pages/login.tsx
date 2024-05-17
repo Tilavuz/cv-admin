@@ -31,6 +31,7 @@ export default function Login() {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         try {
+            handleLoading(true)
             const res = await axios.post(url + '/login', loginData)
             setCookies('accessToken', res.data.token)
         }catch(err) {

@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 export default function Header() {
 
-    const { menu, handleMenu } = useContext(menuContext)
+    const { handleMenu } = useContext(menuContext)
 
     return (
         <header className="h-[65px] border-b fixed w-full backdrop-blur">
